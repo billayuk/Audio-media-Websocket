@@ -1,0 +1,45 @@
+{
+    "name": "websockets-streaming-audio",
+    "version": "2.0.8",
+    "author": "Scott Stensland <scottstensland@gmail.com> (http://catfoodnation.com/)",
+    "bugs": {
+        "url": "https://github.com/scottstensland/websockets-streaming-audio/issues"
+    },
+    "dependencies": {
+        "audio-utils": "2.x.x",
+        "body-parser": "^1.20.1",
+        "bufferutil": "^4.0.1",
+        "cors": "^2.8.5",
+        "express": "^4.4.5",
+        "mongoose": "^6.9.0",
+        "shared-utils": "2.x.x",
+        "utf-8-validate": "^5.0.2",
+        "ws": ">=7.2.1"
+    },
+    "description": "Click a browser button to launch a node.js process on the server side which streams audio using web sockets back to the browser which is then rendered using web audio API   My plan is to make this modular enough to get added to your process as simple API calls",
+    "engines": {
+        "node": "12.14.0"
+    },
+    "homepage": "https://github.com/scottstensland",
+    "keywords": [
+        "Node.js",
+        "websockets",
+        "webworkers",
+        "webaudio",
+        "audio",
+        "streaming"
+    ],
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scottstensland/websockets-streaming-audio.git"
+    },
+    "scripts": {
+        "start_min": "node src_min/app.js",
+        "start_loki": "node src/app_loki.js",
+        "start": "node src/app-server.js",
+        "test": "make",
+        "start:frontend": "node src/app-client.js"
+    },
+    "subdomain": "websockets-streaming-audio"
+}
